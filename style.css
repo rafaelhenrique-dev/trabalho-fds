@@ -1,0 +1,235 @@
+/* Importação das fontes que serão usadas no site */
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: "Cinzel";
+    src: url(fonts/cinzel/Cinzel-Regular.otf);
+}
+@font-face {
+    font-family: "Speak Days";
+    src: url(fonts/speak_days/Speak\ Days.otf);
+}
+/* Estrutura mais básica do site o body com a cor mais clara e a class retângulo com outra coisa mais escura p/ dar contraste */
+body {
+    background-color: #D8D4F2;
+}
+.retangulo {
+    background-color: #1E1E2F;
+    width: 90%;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+/*H1 com a class de meu-nome para estilização individual*/
+.meu-nome {
+    text-align: center;
+    color: #F0F0F5; /*cor do título */
+    font-size: 60px;
+    font-family: "Cinzel";
+}
+/*<p> com a class de autobiografia para estilização individual*/
+.autobiografia {
+    font-size: 29px; /* Fonte do paragráfo um pouco maior */
+    font-family: "Lato-Regular";
+    text-align: justify; /*Justificar paragráfo */
+    color: #C0C0D0;
+}
+/*Estilização individual da uma img que é a minha foto*/
+#minha-foto {
+    width: auto;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.4);
+    margin-left: 100px;
+    margin-right: 50px;
+}
+/*Estilização de todas as imagens do site*/
+img {
+    object-fit: cover;
+    height: auto;
+    border-radius: 20px;
+}
+/*div feita para organizar configurações relacionadas a img e o <p> da autobiografia*/
+.container-autobiografia {
+    object-fit: cover;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+/*Estilização da lista*/
+ul,li {
+    margin-top: 40px; /*Espaço acima da lista */
+    margin-bottom:40px; /*Espaço abaixo da lista */
+    margin-left:0 ; /*Espaço à esquerda da lista */
+    margin-right:0 ; /*Espaço à direita da lista */
+    font-size: 20px; /*tamanho da fonte*/
+    color: white;
+    
+}
+/*Div criada com o objetivo de estilizar juntamente os hobbies e tabelas sendo mais especifico com o objetivo de colocar elas uma ao lado da outra com o display:flex*/
+.hobbies-e-tabela {
+    display:flex;
+    gap: 60px;
+    align-items: flex-start;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*Estilização de tudo que envolva as tabelas usadas no site, não só de forma geral como também algumas especificas*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20%;
+    margin-top: 100px;
+}
+td,tr {
+    padding: 0;
+    text-align: center;
+    width: auto;
+    height: 180px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.negrito { /*class com nome genérico, que apenas deixa os nomes do países da tabela em negrito.*/
+    font-weight: bold; 
+}
+.container-tabela {
+    flex: 2;
+    max-width: 800px;
+    margin-left: 200px;
+    font-family: "Cinzel";
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 10px 1px rgba(255,255,255,0.4);
+    color: #F0F0F5;
+    font-size: 28px;
+    background-color: #3D3D5C;
+    border: 1px solid #F0F0F5
+}
+.container-tabela img { /*Estilização das imagens dentro da tabela*/
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+    border-radius: 15%;
+    box-shadow: 0 0 10px 5px rgba(255,255,255,0.4);
+}
+.titulo-paises {
+    text-align: center;
+    font-family: "Cinzel";
+    color: #F0F0F5;
+}
+/*Estilização do link usado no site*/
+a {
+    color: blue;
+    text-decoration: none;
+    padding: 50px;
+}
+a:hover {
+    color: #00f;
+    text-decoration: none;
+
+}
+.botao-w3schools { /*Botão com o intuito de estilização do link*/
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: "Speak Days";
+}
+.botao-w3schools:hover {
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+    
+} 
+/*Estilização de todos os botões do site, como seria algo igual realizei a alteração em todos os botões p/ evitar criação desnecessária de class ou*/
+button {
+    background-color: #3D3D5C;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    margin: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 32px;
+    font-family: "Speak Days";
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+button:hover {
+    background: linear-gradient(135deg, #6c63ff, #3d3d5c);
+    box-shadow: 0 0 20px 5px #332e91;
+    color: white;
+}
+/*Estilização de itens dentro do container de hobbies*/
+.container-hobbies img {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.container-hobbies li {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-family: "Cinzel";
+    justify-content: flex-start;
+    width: 200px;
+    text-align: center;
+    flex: 1;
+    font-size: 25px;
+    text-align: left;
+}
+.titulo-hobbies {
+    margin-top: 50px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    font-family: "Cinzel";
+    color: #F0F0F5;
+    font-size: 30px;
+}
+/*Linhas (hr) criadas abaixo de titulos com o intuito de dar um destaque ao título*/
+.linha-de-destaque-nome {
+    background-color: white;
+    width: 85%;
+    height: 2px;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}.linha-de-destaque-hobbies {
+    background-color: white;
+    width: 150px;
+    height: 2px;
+    box-shadow: 0 0 10px 2px rgba(255,255,255,0.4);
+    margin-left: 0;
+    margin-top: 2.5;
+}
+.linha-de-destaque-paises {
+    background-color: white;
+    width: 600px;
+    height: 2px;
+    box-shadow: 0 0 10px 1px rgba(255,255,255,0.4);
+    margin-bottom: 10px;
+    align-items: center;
+    margin-top: 0;
+}
+.frase-simples {
+  color: white;
+  font-family: "Cinzel";
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #3d3d5c;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 2px rgba(255,255,255,0.4);
+  margin-top: 20px;
+}

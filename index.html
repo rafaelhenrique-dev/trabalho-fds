@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Sou Eu?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/favicon-32x32.png">
+</head>
+<body>
+    <div class="retangulo">
+        <h1 class="meu-nome">Rafael Henrique Souza Silveira</h1>
+        <hr class="linha-de-destaque-nome"></hr>
+        <!--Breve autobiografia contendo informações como: nome,idade,cidade de residência,interesses e etc-->
+        <div class="container-autobiografia">
+            <p class="autobiografia">Meu nome é Rafael Henrique, sou escrevente em um cartório de Registro Civil e atualmente curso Análise e Desenvolvimento de Sistemas. Tenho grande interesse por tecnologia, programação, jogos e também por animes e leitura. Busco sempre aprender coisas novas e estou em constante evolução, tanto pessoal quanto profissionalmente. Este site é uma forma de me apresentar e compartilhar um pouco sobre meus hobbies, conhecimentos e trajetória.</p>
+            <img id="minha-foto"src="imagens/foto-minha.jpg" alt="Uma foto do desenvolvedor dessa página">
+        </div>
+        <!--Quando esse botão for clicado uma mensagem motivacional será exibida-->
+        <div class= "botao-galaxia"id="acoes">
+            <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+            <p id="mensagem"></p>
+        </div>
+        <!--Lista de hobbies com imagens que as representem-->
+        <div class="hobbies-e-tabela">   
+            <div class="container-hobbies">
+                <div class="hobbies">
+                    <h2 class="titulo-hobbies">Hobbies</h2>
+                    <hr class="linha-de-destaque-hobbies">
+                    <ul>
+                        <li>
+                            Leitura <br>
+                            <img src="imagens/leitura.jpeg" alt="Leitor aproveitando a luz do sol para ler um livro em um momento de calma">
+                        </li>
+                        <li>
+                            Assistir animes, filmes e series <br>
+                            <img src="imagens/assistir_filmes.jpeg" alt="Homem assistindo seu filme favorito na TV">
+                        </li>
+                        <li>
+                            Jogar no Computador<br>
+                            <img src="imagens/jogos.jpeg" alt="Pessoa jogando no computador com setup iluminado">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Tabela com países que quero visitar e suas respectivas imagens-->
+            <div class="container-tabela">
+                <h2 class="titulo-paises">Países que planejo visitar</h2>
+                <hr class="linha-de-destaque-paises">
+                <div class="paises">
+                    <table>
+                        <tr>
+                            <td class ="negrito">Japão</td> <!--Criei a class "negrito" para facilitar a estilização via CSS-->
+                            <td><img src="imagens/templo_do_japao.jpeg" alt="Templo Japonês vermelho clássico com um céu limpo ao fundo"></td>
+                        </tr> 
+                        <tr>
+                            <td class ="negrito">Suécia</td>
+                            <td><img src="imagens/paisagem_da_suecia.jpeg" alt="Paisagem da Suécia com algumas casas de cores diferentes e uma linda porção do mar"></td>
+                        </tr>
+                        <tr>
+                            <td class ="negrito">Egito</td>
+                            <td><img src="imagens/piramides_do_egito.jpeg" alt="Piramides do Egito"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>    
+            <!--Botão W3Schools-->
+            <a class="link-w3schools" href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+            <button class="botao-w3schools">
+                Clique aqui e descobra o site que me ajudou a estudar e fazer este site!
+            </button>
+        </a>
+        <script src="script.js"></script>
+    </div>
+</div>
+</body>
+</html> 
